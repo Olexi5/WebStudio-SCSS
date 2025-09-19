@@ -13,11 +13,11 @@
 }
 .clients-link:focus,
 .clients-link:hover {
-  border: 1px solid var(--accent-color);
+  border: 1px solid $accent-color;
 }
 .clients-link:focus .clients-svg,
 .clients-link:hover .clients-svg {
-  fill: #2196f3;
+  fill: $accent-color;
 }
 .clients-list {
   display: flex;

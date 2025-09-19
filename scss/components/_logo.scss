@@ -1,6 +1,6 @@
 .logo {
-  color: var(--pretitle-color);
-  font-family: "Raleway", sans-serif;
+  color: $accent-color;
+  font-family: $raleway-font;
   font-weight: 700;
   font-size: 26px;
   line-height: 100%;
@@ -8,5 +8,5 @@
 }
 .logo > span,
 .footer-logo > span {
-  color: var(--accent-color);
+  color: $accent-color;
 }

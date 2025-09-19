@@ -1,14 +1,14 @@
 .team-name {
-  font-family: "Roboto", sans-serif;
+  font-family: $roboto-font;
   font-weight: 500;
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 3%;
   text-align: center;
-  color: var(--pretitle-color);
+  color: $pretitle-color;
 }
 .team-profession {
-  font-family: "Roboto", sans-serif;
+  font-family: $roboto-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
@@ -16,12 +16,12 @@
   text-align: center;
 }
 .team {
-  background-color: var(--backround-color2);
+  background-color: $backround-color2;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 .team-item {
-  background-color: var(--title-color);
+  background-color: $title-color;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
@@ -63,11 +63,11 @@
 }
 .team-media:focus,
 .team-media:hover {
-  background-color: #2196f3;
+  background-color: $accent-color;
 }
 .team-media:focus .team-svg,
 .team-media:hover .team-svg {
-  fill: #ffffff;
+  fill: $title-color;
 }
 .media-list {
   display: flex;
@@ -76,7 +76,7 @@
 .media-svg {
   width: 20px;
   height: 20px;
-  fill: #ffffff;
+  fill: $title-color;
 }
 .media-link {
   display: block;
@@ -88,7 +88,7 @@
 }
 .media-link:focus,
 .media-link:hover {
-  background-color: #2196f3;
+  background-color: $accent-color;
 }
 .media {
   margin-left: 70px;
