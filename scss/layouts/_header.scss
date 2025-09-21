@@ -60,16 +60,15 @@
   padding-bottom: 25px;
 }
 .header-container {
-  display: flex;
-  align-items: center;
+  @extend %flex;
   align-content: center;
 }
 .nav-list {
-  display: flex;
+  @extend %flex;
   margin-left: 93px;
 }
 .contact-list {
-  display: flex;
+  @extend %flex;
   margin-left: 344px;
 }
 .contact-item:last-child {
@@ -93,9 +92,8 @@
   height: 12px;
 }
 .contact-link {
-  display: flex;
+  @extend %flex;
   gap: 10px;
-  align-items: center;
 }
 .contact-item:nth-child(2) {
   width: 142px;

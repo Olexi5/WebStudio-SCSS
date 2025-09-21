@@ -3,7 +3,7 @@
   margin-top: 94px;
   margin-bottom: 50px;
   &__list {
-    display: flex;
+    @extend %flex;
     gap: 8px;
     width: 575px;
     margin: 0 auto;

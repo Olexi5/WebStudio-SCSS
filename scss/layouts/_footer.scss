@@ -23,7 +23,7 @@
   margin-top: 20px;
 }
 .footer-container {
-  display: flex;
+  @extend %flex;
 }
 .footer-title {
   font-family: $roboto-font;
@@ -52,7 +52,7 @@
   border-radius: 4px;
 }
 .mailing-form {
-  display: flex;
+  @extend %flex;
   gap: 12px;
 }
 .mailing-btn {
@@ -63,9 +63,8 @@
   letter-spacing: 6%;
   text-align: center;
   color: $title-color;
-  display: flex;
+  @extend %flex;
   gap: 10px;
-  align-items: center;
   padding: 10px 28px;
   background-color: $accent-color;
   border: none;
@@ -75,4 +74,24 @@
   width: 24px;
   height: 24px;
   fill: $title-color;
+}
+.media-list {
+  @extend %flex;
+  gap: 10px;
+}
+.media-svg {
+  width: 20px;
+  height: 20px;
+  fill: $title-color;
+}
+.media-link {
+  @include svg-link(#ffffff1a);
+}
+.media-link:focus,
+.media-link:hover {
+  background-color: $accent-color;
+}
+.media {
+  margin-left: 70px;
+  margin-right: 93px;
 }

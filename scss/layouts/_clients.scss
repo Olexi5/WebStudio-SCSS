@@ -20,7 +20,7 @@
   fill: $accent-color;
 }
 .clients-list {
-  display: flex;
+  @extend %flex;
   gap: 30px;
 }
 .clients {

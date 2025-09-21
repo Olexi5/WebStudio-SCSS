@@ -7,8 +7,8 @@
   padding-top: 94px;
 }
 .aspects-list {
-  display: flex;
-  justify-content: space-between;
+  @extend %flex;
+  gap: 30px;
 }
 .aspects-title {
   font-family: $roboto-font;
