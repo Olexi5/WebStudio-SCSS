@@ -18,6 +18,7 @@
 }
 .priorities-list {
   @extend %flex;
+  align-items: flex-start;
 }
 .priorities-item {
   margin-right: 30px;

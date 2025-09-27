@@ -201,11 +201,6 @@ body {
   width: 696px;
 }
 
-.solution,
-.footer {
-  background-color: #2f303a;
-}
-
 .solution-btn {
   display: block;
   margin: 0 auto;
@@ -229,6 +224,8 @@ body {
   padding-bottom: 200px;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Img-bac.jpg);
   background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-bac.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .backdrop {
@@ -475,6 +472,12 @@ body {
 
 .priorities-text {
   margin-right: 30px;
+}
+
+.priorities-list {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .priorities-item {
@@ -843,4 +846,8 @@ body {
 .media {
   margin-left: 70px;
   margin-right: 93px;
+}
+
+.footer {
+  background-color: #2f303a;
 }
