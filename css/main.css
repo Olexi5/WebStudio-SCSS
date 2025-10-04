@@ -660,9 +660,6 @@ body {
       flex-wrap: wrap;
 }
 
-.team-item {
-  width: 270px;
-}
 @media screen and (min-width: 320px) {
   .team-item {
     width: 450px;
@@ -671,12 +668,14 @@ body {
 @media screen and (min-width: 768px) {
   .team-item {
     width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-item {
+    width: 270px;
   }
 }
 
-.team-img {
-  width: 270px;
-}
 @media screen and (min-width: 320px) {
   .team-img {
     width: 450px;
@@ -685,6 +684,11 @@ body {
 @media screen and (min-width: 768px) {
   .team-img {
     width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-img {
+    width: 270px;
   }
 }
 
