@@ -19,6 +19,14 @@
   background-color: $backround-color2;
   padding-top: 94px;
   padding-bottom: 94px;
+  @media screen and (min-width: 320px) {
+    padding-top: 60px;
+  padding-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+  padding-bottom: 60px;
+  }
 }
 .team-item {
   background-color: $title-color;
@@ -28,12 +36,25 @@
 .team-list {
   @extend %flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 .team-item {
   width: 270px;
+  @media screen and (min-width: 320px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
 }
 .team-img {
   width: 270px;
+  @media screen and (min-width: 320px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
 }
 .team-name {
   margin-top: 30px;

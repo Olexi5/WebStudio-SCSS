@@ -1,11 +1,18 @@
+.aspects {
+  padding-top: 94px;
+  @media screen and (min-width: 320px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
 .aspects-item {
   position: relative;
   margin-bottom: 94px;
   height: 294px;
 }
-.aspects {
-  padding-top: 94px;
-}
+
 .aspects-list {
   @extend %flex;
   gap: 30px;
