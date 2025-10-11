@@ -21,6 +21,7 @@
 }
 .clients-list {
   @extend %flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .clients {

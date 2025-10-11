@@ -1,10 +1,13 @@
 .aspects {
   padding-top: 94px;
-  @media screen and (min-width: 320px) {
+  
     display: none;
-  }
+  
   @media screen and (min-width: 768px) {
     display: none;
+  }
+  @media screen and (min-width:1200px){
+    display: block;
   }
 }
 .aspects-item {
