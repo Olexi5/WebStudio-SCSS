@@ -1,20 +1,21 @@
 .title {
   font-family: $roboto-font;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   letter-spacing: 6%;
   text-align: center;
   text-transform: uppercase;
   color: $title-color;
-  margin: 0 auto;
-  width: 696px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+  }
 }
 
 .solution-btn {
   display: block;
   margin: 0 auto;
-  margin-top: 30px;
   font-family: $roboto-font;
   font-weight: 700;
   font-size: 16px;
@@ -23,14 +24,13 @@
   text-align: center;
   color: $title-color;
   background-color: $accent-color;
-  width: 216px;
   padding: 10px 32px;
-  border: none;
+
   border-radius: 5px;
+  border: none;
 }
 .solution {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 118px 60px;
 
   background-image: linear-gradient(
       to top,
@@ -38,6 +38,15 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/Img-bac.jpg);
-  background-repeat: no-repeat;
+
   background-position: center;
+  background-size: cover;
+  @media screen and (min-width: 768px) {
+    padding: 118px 204px;
+    background-position: left;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 200px 452px;
+    background-position: center;
+  }
 }

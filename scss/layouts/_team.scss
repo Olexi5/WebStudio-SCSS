@@ -17,15 +17,11 @@
 }
 .team {
   background-color: $backround-color2;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  @media screen and (min-width: 320px) {
-    padding-top: 60px;
+  padding-top: 60px;
   padding-bottom: 60px;
-  }
-  @media screen and (min-width: 768px) {
-    padding-top: 60px;
-  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 .team-item {
@@ -39,9 +35,7 @@
   flex-wrap: wrap;
 }
 .team-item {
-  
-    width: 100%;
-  
+  width: 100%;
   @media screen and (min-width: 768px) {
     width: 354px;
   }
@@ -50,9 +44,9 @@
   }
 }
 .team-img {
- display: block;
-    width: 100%;
-  
+  display: block;
+  width: 100%;
+
   @media screen and (min-width: 768px) {
     width: 354px;
   }
