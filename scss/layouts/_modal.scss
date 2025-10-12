@@ -11,8 +11,8 @@
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   border-radius: 4px;
   background-color: $title-color;
   box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
@@ -24,6 +24,10 @@
   padding: 40px;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 1200px){
+        width: 528px;
+        height: 571px;
+    }
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -88,7 +92,7 @@
 }
 .modal-input {
   display: block;
-  width: 448px;
+  width: 370px;
   height: 40px;
   border: 1px solid #21212133;
   border-radius: 4px;
@@ -105,7 +109,7 @@
 }
 .modal-area {
   padding: 12px;
-  width: 448px;
+  width: 370px;
   height: 120px;
   resize: none;
   border: 1px solid #21212133;
