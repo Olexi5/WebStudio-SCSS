@@ -4,38 +4,13 @@
     display: block;
   }
 }
-.contact-list{
+.contact-list {
   display: none;
   @media screen and (min-width: 768px) {
-    display: block;
+    display: flex;
   }
 }
-.menu__open {
-  display: inline-block;
-  padding: 12px 8px;
-  background: none;
-  border: none;
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-  &__svg{
-    width: 24px;
-    height: 16px;
-  }
-}
-.menu__close{
-  padding: 11px 10px 10px 11px;
-  background: none;
-  border: none;
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  
-  &__svg{
-    width: 19px;
-    height: 19px;
-  }
-}
+
 .menu {
   position: fixed;
   background-color: #fff;
@@ -44,15 +19,116 @@
   width: 100vw;
   height: 100vh;
   z-index: 5;
+  padding: 48px 83px 48px 40px;
+  &__open {
+    display: inline-block;
+    padding: 12px 8px;
+    background: none;
+    border: none;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+    &__svg {
+      width: 24px;
+      height: 16px;
+    }
+  }
+  &__close {
+    padding: 11px 10px 10px 11px;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    &__svg {
+      width: 19px;
+      height: 19px;
+    }
+  }
+  &__nav {
+    margin-bottom: 302px;
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 33px;
+    }
+    &__link {
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 100%;
+      letter-spacing: 2%;
+      text-align: center;
+      color: $pretitle-color;
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
+  &__contact {
+    &__list {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 32px;
+      margin-bottom: 64px;
+    }
+    &__link {
+      &--mail {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: 2%;
+        color: $text-color;
+      }
+      &--phone {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 34px;
+        color: $accent-color;
+        line-height: 100%;
+        letter-spacing: 2%;
+      }
+    }
+  }
+  &__networks {
+    &__list {
+      display: flex;
+      gap: 20px;
+    }
+    &__item {
+      position: relative;
+      &::after {
+        content: "";
+        display: inline-block;
+        height: 22px;
+        width: 1px;
+        background-color: #21212133;
+        position: absolute;
+        right: -10px;
+      }
+      &:last-child::after {
+        display: none;
+      }
+    }
+    &__link {
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      color: $accent-color;
+      line-height: 22px;
+      letter-spacing: 2%;
+    }
+  }
 }
 .is-hidden {
   display: none;
 }
 
 .nav-item,
-.contact-item,
 .nav-item-port {
-  margin-right: 50px;
+  margin-right: 51px;
 }
 .nav-link {
   color: $pretitle-color;
@@ -111,15 +187,29 @@
 .header-container {
   @extend %flex;
   align-content: center;
-  justify-content: space-between
+  justify-content: space-between;
 }
 .nav-list {
   @extend %flex;
-  margin-left: 93px;
+  @media screen and (min-width: 768px) {
+    margin-left: 87px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 92px;
+  }
 }
 .contact-list {
   @extend %flex;
-  margin-left: 344px;
+  flex-direction: column;
+  gap: 10px;
+  @media screen and (min-width: 768px) {
+    margin-left: 96px;
+  }
+  @media screen and (min-width: 1200px) {
+    gap: 30px;
+    flex-direction: row;
+    margin-left: 315px;
+  }
 }
 .contact-item:last-child {
   margin-right: 0;
