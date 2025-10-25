@@ -17,9 +17,20 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <a href="./index.html" class="logo"><span>Web</span>Studio</a>
+        <button type="button" class="menu__open" data-mob-open>
+          <svg class="menu__open__svg"><use href="./images/symbol-defs(2).svg#icon-burger"></use></svg>
+        </button>
+        <div class="is-hidden menu" data-mob>
+          <div class="container">
+            <button type="button" class="menu__close" data-mob-close>
+              <svg class="menu__close__svg"><use href="./images/symbol-defs.svg#icon-cross"></use></svg>
+            </button>
+            
+          </div>
+        </div>
         <nav class="nav">
           <ul class="nav-list">
             <li class="nav-item">
@@ -44,7 +55,7 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
     <main>
       <div class="backdrop is-hidden" data-modal>
         <div class="container modal">
