@@ -1,12 +1,19 @@
 .types {
   margin: 0 auto;
-  margin-top: 94px;
-  margin-bottom: 50px;
+  margin-top: 60px;
+  margin-bottom: 40px;
   &__list {
     @extend %flex;
+    flex-wrap: wrap;
     gap: 8px;
+    justify-content: flex-start;
+    width: 326px;
+    @media screen and (min-width: 768px){
     width: 575px;
+    justify-content: center;
     margin: 0 auto;
+    margin-bottom: 30px;
+    }
   }
   &__btn {
     background-color: $backround-color2;

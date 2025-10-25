@@ -1,24 +1,40 @@
 .works {
-  margin-bottom: 94px;
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 94px;
+  }
   &__list {
     @extend %flex;
     flex-wrap: wrap;
     gap: 30px;
+    @media screen and (min-width: 768px) {
+      justify-content: flex-start;
+    }
   }
   &__item {
     background-color: $title-color;
     border: 1px solid $border-color;
     position: relative;
     overflow: hidden;
-    width: calc((100% - 60px) / 3);
+    width: 450px;
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
     &:hover {
       box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
         0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
     }
   }
+  &__img {
+    width: 450px;
+    height: 294px;
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+  }
   &__text {
     background-color: #2196f3e5;
-    width: 370px;
+    width: 450px;
     height: 294px;
     position: absolute;
     top: 0;
@@ -32,6 +48,9 @@
     padding: 63px 24px;
     transform: translateY(150%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
   }
   &__names {
     font-family: $roboto-font;

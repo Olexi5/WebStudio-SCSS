@@ -13,9 +13,44 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+        <header class="header">
       <div class="container header-container">
         <a href="./index.html" class="logo"><span>Web</span>Studio</a>
+        <button type="button" class="menu__open" data-mob-open>
+          <svg class="menu__open__svg"><use href="./images/symbol-defs(2).svg#icon-burger"></use></svg>
+        </button>
+        <div class="is-hidden menu" data-mob>
+          <div class="container">
+            <button type="button" class="menu__close" data-mob-close>
+              <svg class="menu__close__svg"><use href="./images/symbol-defs.svg#icon-cross"></use></svg>
+            </button>
+            <nav class="menu__nav">
+            <ul class="menu__nav__list">
+            <li class="menu__nav__item">
+              <a class="menu__nav__link" href="./index.html">Студія</a>
+            </li>
+            <li class="menu__nav__item">
+              <a class="menu__nav__link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="menu__nav__item"><a class="menu__nav__link" href="">Контакти</a></li>
+           </ul>
+           </nav>
+           <ul class="menu__contact__list">
+           <li class="menu__contact__item">
+            <a class="menu__contact__link--mail" href="">info@devstudio.com</a>
+           </li>
+           <li class="menu__contact__item">
+            <a class="menu__contact__link--phone" href="">+38 096 111 11 11</a>
+           </li>
+           </ul>
+           <ul class="menu__networks__list">
+            <li class="menu__networks__item"><a href="" class="menu__networks__link">Instagram</a></li>
+            <li class="menu__networks__item"><a href="" class="menu__networks__link">Twitter</a></li>
+            <li class="menu__networks__item"><a href="" class="menu__networks__link">Facebook</a></li>
+            <li class="menu__networks__item"><a href="" class="menu__networks__link">LinkedIn</a></li>
+           </ul>
+          </div>
+        </div>
         <nav class="nav">
           <ul class="nav-list">
             <li class="nav-item-port">

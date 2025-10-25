@@ -140,6 +140,9 @@ body {
   top: 10px;
   right: 15px;
 }
+.menu__close:hover .menu__close__svg {
+  fill: #2196f3;
+}
 .menu__close__svg {
   width: 19px;
   height: 19px;
@@ -640,13 +643,27 @@ body {
 
 .types {
   margin: 0 auto;
-  margin-top: 94px;
-  margin-bottom: 50px;
+  margin-top: 60px;
+  margin-bottom: 40px;
 }
 .types__list {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 8px;
-  width: 575px;
-  margin: 0 auto;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 326px;
+}
+@media screen and (min-width: 768px) {
+  .types__list {
+    width: 575px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
 }
 .types__btn {
   background-color: #f5f4fa;
@@ -976,27 +993,53 @@ body {
 }
 
 .works {
-  margin-bottom: 94px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .works {
+    margin-bottom: 94px;
+  }
 }
 .works__list {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
 }
+@media screen and (min-width: 768px) {
+  .works__list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 .works__item {
   background-color: #ffffff;
   border: 1px solid #eeeeee;
   position: relative;
   overflow: hidden;
-  width: calc((100% - 60px) / 3);
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .works__item {
+    width: 354px;
+  }
 }
 .works__item:hover {
   -webkit-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
+.works__img {
+  width: 450px;
+  height: 294px;
+}
+@media screen and (min-width: 768px) {
+  .works__img {
+    width: 354px;
+  }
+}
 .works__text {
   background-color: rgba(33, 150, 243, 0.8980392157);
-  width: 370px;
+  width: 450px;
   height: 294px;
   position: absolute;
   top: 0;
@@ -1014,6 +1057,11 @@ body {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .works__text {
+    width: 354px;
+  }
 }
 .works__names {
   font-family: "Roboto", sans-serif;
