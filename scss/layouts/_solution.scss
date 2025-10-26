@@ -44,7 +44,11 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../../images/Img-bac@2x.jpg);
+    background-image:linear-gradient(
+      to top,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ), url(../images/Img-bac@2x.jpg);
   }
   @media screen and (min-width: 768px) {
     padding: 118px 204px;
@@ -52,7 +56,11 @@
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../../images/Img-bac@2x.jpg);
+    background-image:linear-gradient(
+      to top,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ), url(../images/Img-bac@2x.jpg);
   }
   }
   @media screen and (min-width: 1200px) {
@@ -61,7 +69,11 @@
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../../images/Img-bac@2x.jpg);
+    background-image:linear-gradient(
+      to top,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ), url(../images/Img-bac@2x.jpg);
   }
   }
 }

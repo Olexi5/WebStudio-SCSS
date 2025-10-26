@@ -63,9 +63,9 @@
 }
 .team-media-list {
   @extend %flex;
+  justify-content: space-evenly;
   gap: 10px;
   margin-bottom: 30px;
-  margin-left: 32px;
 }
 .team-svg {
   width: 20px;

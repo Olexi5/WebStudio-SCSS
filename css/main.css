@@ -426,7 +426,8 @@ body {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .solution {
-    background-image: url(../../images/Img-bac@2x.jpg);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Img-bac@2x.jpg);
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-bac@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -437,7 +438,8 @@ body {
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .solution {
-    background-image: url(../../images/Img-bac@2x.jpg);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Img-bac@2x.jpg);
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-bac@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -448,7 +450,8 @@ body {
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .solution {
-    background-image: url(../../images/Img-bac@2x.jpg);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Img-bac@2x.jpg);
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-bac@2x.jpg);
   }
 }
 
@@ -788,7 +791,7 @@ body {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .priorities-item:nth-child(1):before {
-    background-image: url(../../images/antenna@2x.png);
+    background-image: url(../images/antenna@2x.png);
     background-size: 70px;
   }
 }
@@ -798,7 +801,7 @@ body {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .priorities-item:nth-child(2):before {
-    background-image: url(../../images/clock@2x.png);
+    background-image: url(../images/clock@2x.png);
     background-size: 70px;
   }
 }
@@ -808,7 +811,7 @@ body {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .priorities-item:nth-child(3):before {
-    background-image: url(../../images/diagram@2x.png);
+    background-image: url(../images/diagram@2x.png);
     background-size: 70px;
   }
 }
@@ -818,7 +821,7 @@ body {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .priorities-item:nth-child(4):before {
-    background-image: url(../../images/astronaut@2x.png);
+    background-image: url(../images/astronaut@2x.png);
     background-size: 70px;
   }
 }
@@ -946,9 +949,11 @@ body {
 }
 
 .team-media-list {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   gap: 10px;
   margin-bottom: 30px;
-  margin-left: 32px;
 }
 
 .team-svg {
