@@ -96,6 +96,8 @@
   }
   &__networks {
     &__list {
+      width: 100%;
+      flex-wrap: wrap;
       display: flex;
       gap: 20px;
     }
