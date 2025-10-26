@@ -424,6 +424,11 @@ body {
   background-position: center;
   background-size: cover;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .solution {
+    background-image: url(../../images/Img-bac@2x.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .solution {
     padding: 118px 204px;
@@ -771,17 +776,41 @@ body {
 .priorities-item:nth-child(1):before {
   background-image: url(../images/antenna.png);
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .priorities-item:nth-child(1):before {
+    background-image: url(../../images/antenna@2x.png);
+    background-size: 70px;
+  }
+}
 
 .priorities-item:nth-child(2):before {
   background-image: url(../images/clock.png);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .priorities-item:nth-child(2):before {
+    background-image: url(../../images/clock@2x.png);
+    background-size: 70px;
+  }
 }
 
 .priorities-item:nth-child(3):before {
   background-image: url(../images/diagram.png);
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .priorities-item:nth-child(3):before {
+    background-image: url(../../images/diagram@2x.png);
+    background-size: 70px;
+  }
+}
 
 .priorities-item:nth-child(4):before {
   background-image: url(../images/astronaut.png);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .priorities-item:nth-child(4):before {
+    background-image: url(../../images/astronaut@2x.png);
+    background-size: 70px;
+  }
 }
 
 .aspects {
